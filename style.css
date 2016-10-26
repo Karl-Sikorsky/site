@@ -1,0 +1,48 @@
+body{background: #efefef url(skulls.png);
+      font: 16px/24px Arial, Tahoma, sans-serif;}
+a{text-decoration: none;}
+/*сама структура*/
+div.mid{width: 1000px; margin: 0 auto; }
+div.header{ background: #101417;}
+
+/*Шапка сайта*/
+div.topmenu{float: right; height: 106px; line-height: 106px;}
+div.topmenu a{margin: 0 0 0 10px; color: #1683a3;}
+div.topmenu a:hover{color: #fff;}
+div.afisha{padding: 20px 50px 0 33px; background: #efefef;}
+div.afisha img{float: left;}
+div.afisha img:hover{transform: scale(1.25) rotate(-5deg); transition: transform 1s;}
+div.afisha h3{font-size: 24px; font-weight: normal; text-align: center; color: #830000;}
+div.afisha p{text-align: center;}
+div.afisha a{font-size: 20px; color: #fff; font-weight: bold; background: #b23600; 
+	border: 2px solid #862900; border-radius: 4px; box-shadow: 2px 2px 7px #777;}
+div.afisha a:hover{background: #068bac;}
+
+
+/*главное меню*/
+div.menu {background: #1683a3; border: 2px solid #016c7b; border-right: none; border-left: none;}
+div.menu ul{margin: 0; padding: 0; list-style: none; text-align: center;}
+div.menu ul li{display: inline-block; margin: 5px 50px;}
+div.menu ul li a{color: #fff; text-transform: uppercase; text-shadow: 2px 2px 3px #0b4455;}
+div.menu ul li a:hover{color: #068bac;}
+
+
+/*контент*/
+div.fon{background: #fff; border:2px solid #ccc; padding: 40px;}
+div.block{width: 440px; float: left; margin-top: 10px;}
+div.block:nth-of-type(even){float: right;}
+div.block a p{color: #272727;}
+div.anounce{background: #f5f5f5; border:2px solid #ccc; border-radius: 5px; padding: 30px;}
+div.anounce:hover{background: #e0eff4;}
+div.anounce h3{font-size: 18px;  margin: 20px 0 10px; color: #01617d;}
+div.anounce p{text-shadow: 2px 2px 0 #fff;}
+
+div.table { margin-left: 500px; border-spacing: 5px;}
+#table{border-spacing: 5px;}
+div.clear{clear: both;}
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 999px){
+	div.mid{width: 95%;}
+
+}

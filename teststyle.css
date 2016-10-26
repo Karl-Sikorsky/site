@@ -1,0 +1,12 @@
+body{background: #efefef url(weather.png);
+      font: 16px/24px Arial, Tahoma, sans-serif;}
+#train {
+      position: relative;
+      cursor: pointer;
+      top: 0px;
+
+
+    }
+input{position: relative;
+left: 140px;}
+div.backbutton{top: 100px; padding-left: 400px;}

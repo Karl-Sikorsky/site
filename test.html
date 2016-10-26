@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Kalevych</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="teststyle.css" media="all"> 
+</head>
+
+<body>
+ <img src="headtext.png">
+  
+  	<input type="text" id="name" length="50" size="100">
+  	<img src="scale.png">
+
+
+  <img id="train" src="book.png">
+
+
+  <script>
+    train.onclick = function() {
+      animate(function(timePassed) {
+        train.style.left = timePassed / 5 + 'px';
+      }, Math.random()*5000);
+    };
+
+    // Рисует функция draw
+    // Продолжительность анимации duration
+    function animate(draw, duration) {
+      var start = performance.now();
+
+      requestAnimationFrame(function animate(time) {
+        // определить, сколько прошло времени с начала анимации
+        var timePassed = time - start;
+
+        console.log(time, start)
+          // возможно небольшое превышение времени, в этом случае зафиксировать конец
+        if (timePassed > duration) timePassed = duration;
+
+        // нарисовать состояние анимации в момент timePassed
+        draw(timePassed);
+
+        // если время анимации не закончилось - запланировать ещё кадр
+        if (timePassed < duration) {
+          requestAnimationFrame(animate);
+        }
+
+      });
+    }
+  </script>
+<div class="backbutton">
+<a href="index.html">
+<img src="back.png">
+</a>
+</div>
+</body>
+
+</html>
